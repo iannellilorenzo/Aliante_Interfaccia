@@ -232,6 +232,7 @@
             this.AggBut.TabIndex = 19;
             this.AggBut.Text = "Aggiungi componente";
             this.AggBut.UseVisualStyleBackColor = true;
+            this.AggBut.Click += new System.EventHandler(this.AggBut_Click);
             // 
             // RimBut
             // 
