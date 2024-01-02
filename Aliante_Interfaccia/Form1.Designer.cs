@@ -63,6 +63,7 @@
             this.FusoRadio.TabStop = true;
             this.FusoRadio.Text = "Fusoliera";
             this.FusoRadio.UseVisualStyleBackColor = true;
+            this.FusoRadio.CheckedChanged += new System.EventHandler(this.FusoRadio_CheckedChanged);
             // 
             // AlaRadio
             // 
@@ -74,6 +75,7 @@
             this.AlaRadio.TabStop = true;
             this.AlaRadio.Text = "Ala";
             this.AlaRadio.UseVisualStyleBackColor = true;
+            this.AlaRadio.CheckedChanged += new System.EventHandler(this.AlaRadio_CheckedChanged);
             // 
             // RuotaRadio
             // 
@@ -85,6 +87,7 @@
             this.RuotaRadio.TabStop = true;
             this.RuotaRadio.Text = "Ruota";
             this.RuotaRadio.UseVisualStyleBackColor = true;
+            this.RuotaRadio.CheckedChanged += new System.EventHandler(this.RuotaRadio_CheckedChanged);
             // 
             // CodaRadio
             // 
@@ -96,6 +99,7 @@
             this.CodaRadio.TabStop = true;
             this.CodaRadio.Text = "Coda";
             this.CodaRadio.UseVisualStyleBackColor = true;
+            this.CodaRadio.CheckedChanged += new System.EventHandler(this.CodaRadio_CheckedChanged);
             // 
             // CercLabel
             // 
