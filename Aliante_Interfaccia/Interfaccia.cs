@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    interface IComposite
+    public interface IComposite
     {
         void Aggiunta(IComposite componente);
 
