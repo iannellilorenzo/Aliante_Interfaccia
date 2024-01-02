@@ -234,5 +234,16 @@ namespace Aliante_Interfaccia
                 aliante.Aggiunta(ruota);
             }
         }
+
+        private void RimBut_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(RimIndex.Text, out int index) || index < 0 || RimIndex.Text == "0" || String.IsNullOrEmpty(RimIndex.Text) || index - 1 > aliante.IComposites.Count)
+            {
+                MessageBox.Show("Inserire un indice valido.");
+                return;
+            }
+
+            aliante.Rimuovi(index - 1);
+        }
     }
 }

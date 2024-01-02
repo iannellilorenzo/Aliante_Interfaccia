@@ -242,6 +242,7 @@
             this.RimBut.TabIndex = 20;
             this.RimBut.Text = "Rimuovi componente";
             this.RimBut.UseVisualStyleBackColor = true;
+            this.RimBut.Click += new System.EventHandler(this.RimBut_Click);
             // 
             // PrezzoBut
             // 
