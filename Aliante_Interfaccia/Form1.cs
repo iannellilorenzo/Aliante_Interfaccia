@@ -245,5 +245,27 @@ namespace Aliante_Interfaccia
 
             aliante.Rimuovi(index - 1);
         }
+
+        private void StampaBut_Click(object sender, EventArgs e)
+        {
+            Display.Clear();
+            if (aliante.IComposites.Count < 1)
+            {
+                MessageBox.Show("Inserisci almeno un elemento per poterli stampare.");
+                return;
+            }
+            Display.Items.Add(aliante.ToString());
+        }
+
+        private void PrezzoBut_Click(object sender, EventArgs e)
+        {
+            if (aliante.IComposites.Count < 1)
+            {
+                MessageBox.Show("Inserire almeno un elemento per poter ottenere i costi.");
+                return;
+            }
+
+            Display.Items.Add($"Il prezzo dei componenti sommato è: {aliante.Prezzo()}");
+        }
     }
 }

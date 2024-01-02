@@ -167,9 +167,9 @@
             // Display
             // 
             this.Display.HideSelection = false;
-            this.Display.Location = new System.Drawing.Point(1145, 13);
+            this.Display.Location = new System.Drawing.Point(996, 13);
             this.Display.Name = "Display";
-            this.Display.Size = new System.Drawing.Size(636, 684);
+            this.Display.Size = new System.Drawing.Size(785, 684);
             this.Display.TabIndex = 11;
             this.Display.UseCompatibleStateImageBehavior = false;
             // 
@@ -252,6 +252,7 @@
             this.PrezzoBut.TabIndex = 22;
             this.PrezzoBut.Text = "Calcolo prezzo";
             this.PrezzoBut.UseVisualStyleBackColor = true;
+            this.PrezzoBut.Click += new System.EventHandler(this.PrezzoBut_Click);
             // 
             // StampaBut
             // 
@@ -261,11 +262,13 @@
             this.StampaBut.TabIndex = 21;
             this.StampaBut.Text = "Stampa componenti";
             this.StampaBut.UseVisualStyleBackColor = true;
+            this.StampaBut.Click += new System.EventHandler(this.StampaBut_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1793, 709);
             this.Controls.Add(this.PrezzoBut);
             this.Controls.Add(this.StampaBut);
