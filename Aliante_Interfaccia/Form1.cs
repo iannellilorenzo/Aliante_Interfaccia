@@ -13,11 +13,13 @@ namespace Aliante_Interfaccia
     public partial class Form1 : Form
     {
         public Aliante aliante;
+        public Ruota ruota;
 
         public Form1()
         {
             InitializeComponent();
             aliante = new Aliante();
+            ruota = new Ruota();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -229,7 +231,8 @@ namespace Aliante_Interfaccia
                 Cerchione cerchione = new Cerchione(prop1, Prop2.Text);
                 Gomma gomma = new Gomma(prop3, prop4, prop5);
 
-                Ruota ruota = new Ruota(cerchione, gomma);
+                ruota.Aggiunta(cerchione);
+                ruota.Aggiunta(gomma);
 
                 aliante.Aggiunta(ruota);
             }

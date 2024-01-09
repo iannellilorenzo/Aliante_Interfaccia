@@ -26,9 +26,9 @@ namespace Aliante_Interfaccia
             Ruote = ruote;
         }
 
-        public Ruota(List<IComponent> oldRuote)
+        public Ruota(Ruota oldRuote)
         {
-            Ruote = oldRuote;
+            Ruote = oldRuote.Ruote;
         }
 
         public override bool Equals(object obj)
