@@ -6,39 +6,29 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    public class Ruota : IComposite
+    public class Ruota : IComponent
     {
-        private Gomma _gomma;
-        private Cerchione _cerchione;
+        private List<IComponent> _ruote;
 
-        public Gomma Gomma
+        public List<IComponent> Ruote
         {
-            get { return _gomma; }
-            set { _gomma = value; }
-        }
-
-        public Cerchione Cerchione
-        {
-            get { return _cerchione; }
-            set { _cerchione = value; }
+            get { return _ruote; }
+            set { _ruote = value; }
         }
 
         public Ruota()
         {
-            Gomma = new Gomma();
-            Cerchione = new Cerchione();
+            Ruote = new List<IComponent>();
         }
 
-        public Ruota(Cerchione cerchione, Gomma gomma)
+        public Ruota(List<IComponent> ruote)
         {
-            Cerchione = cerchione;
-            Gomma = gomma;
+            Ruote = ruote;
         }
 
-        public Ruota(Ruota oldRuota)
+        public Ruota(List<IComponent> oldRuote)
         {
-            Gomma = oldRuota.Gomma;
-            Cerchione = oldRuota.Cerchione;
+            Ruote = oldRuote;
         }
 
         public override bool Equals(object obj)
@@ -49,32 +39,55 @@ namespace Aliante_Interfaccia
             }
 
             Ruota other = (Ruota)obj;
-            return Gomma == other.Gomma && Cerchione == other.Cerchione;
+
+            for (int i = 0; i < Ruote.Count; i++)
+            {
+                if (!Ruote[i].Equals(other.Ruote[i]))
+                {
+                    return false;
+                }
+            }
+
+            return true;
         }
 
-        public void Aggiunta(IComposite component)
+        public void Aggiunta(IComponent component)
         {
-
+            Ruote.Add(component);
         }
 
         public void Rimuovi(int index)
         {
-            
+            Ruote.RemoveAt(index);
         }
 
-        public IComposite GetChild(int index)
+        public IComponent GetChild(int index)
         {
             return null;
         }
 
         public override string ToString()
         {
-            return $"Dettagli gomma: {Gomma}; Dettagli cerchioni: {Cerchione}";
+            string str = "";
+
+            foreach (var component in Ruote)
+            {
+                str += component.ToString();
+            }
+
+            return str;
         }
 
         public double Prezzo()
         {
-            return 0;
+            double tot = 0;
+
+            foreach (var component in Ruote)
+            {
+                tot += component.Prezzo();
+            }
+
+            return tot;
         }
     }
 }

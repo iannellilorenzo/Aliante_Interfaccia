@@ -237,7 +237,7 @@ namespace Aliante_Interfaccia
 
         private void RimBut_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(RimIndex.Text, out int index) || index < 0 || RimIndex.Text == "0" || String.IsNullOrEmpty(RimIndex.Text) || index - 1 > aliante.IComposites.Count)
+            if (!int.TryParse(RimIndex.Text, out int index) || index < 0 || RimIndex.Text == "0" || String.IsNullOrEmpty(RimIndex.Text) || index - 1 > aliante.IComponents.Count)
             {
                 MessageBox.Show("Inserire un indice valido.");
                 return;
@@ -249,7 +249,7 @@ namespace Aliante_Interfaccia
         private void StampaBut_Click(object sender, EventArgs e)
         {
             Display.Clear();
-            if (aliante.IComposites.Count < 1)
+            if (aliante.IComponents.Count < 1)
             {
                 MessageBox.Show("Inserisci almeno un elemento per poterli stampare.");
                 return;
@@ -259,7 +259,7 @@ namespace Aliante_Interfaccia
 
         private void PrezzoBut_Click(object sender, EventArgs e)
         {
-            if (aliante.IComposites.Count < 1)
+            if (aliante.IComponents.Count < 1)
             {
                 MessageBox.Show("Inserire almeno un elemento per poter ottenere i costi.");
                 return;

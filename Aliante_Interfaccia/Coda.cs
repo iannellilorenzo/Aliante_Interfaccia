@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    public class Coda : IComposite
+    public class Coda : IComponent
     {
         private double _lung;
 
@@ -48,7 +48,7 @@ namespace Aliante_Interfaccia
             return Lung == other.Lung;
         }
 
-        public void Aggiunta(IComposite component)
+        public void Aggiunta(IComponent component)
         {
 
         }
@@ -58,7 +58,7 @@ namespace Aliante_Interfaccia
             
         }
 
-        public IComposite GetChild(int index)
+        public IComponent GetChild(int index)
         {
             return null;
         }

@@ -56,9 +56,10 @@
             // FusoRadio
             // 
             this.FusoRadio.AutoSize = true;
-            this.FusoRadio.Location = new System.Drawing.Point(36, 71);
+            this.FusoRadio.Location = new System.Drawing.Point(27, 58);
+            this.FusoRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.FusoRadio.Name = "FusoRadio";
-            this.FusoRadio.Size = new System.Drawing.Size(84, 20);
+            this.FusoRadio.Size = new System.Drawing.Size(67, 17);
             this.FusoRadio.TabIndex = 0;
             this.FusoRadio.TabStop = true;
             this.FusoRadio.Text = "Fusoliera";
@@ -68,9 +69,10 @@
             // AlaRadio
             // 
             this.AlaRadio.AutoSize = true;
-            this.AlaRadio.Location = new System.Drawing.Point(36, 97);
+            this.AlaRadio.Location = new System.Drawing.Point(27, 79);
+            this.AlaRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AlaRadio.Name = "AlaRadio";
-            this.AlaRadio.Size = new System.Drawing.Size(48, 20);
+            this.AlaRadio.Size = new System.Drawing.Size(40, 17);
             this.AlaRadio.TabIndex = 1;
             this.AlaRadio.TabStop = true;
             this.AlaRadio.Text = "Ala";
@@ -80,9 +82,10 @@
             // RuotaRadio
             // 
             this.RuotaRadio.AutoSize = true;
-            this.RuotaRadio.Location = new System.Drawing.Point(36, 149);
+            this.RuotaRadio.Location = new System.Drawing.Point(27, 121);
+            this.RuotaRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RuotaRadio.Name = "RuotaRadio";
-            this.RuotaRadio.Size = new System.Drawing.Size(64, 20);
+            this.RuotaRadio.Size = new System.Drawing.Size(54, 17);
             this.RuotaRadio.TabIndex = 3;
             this.RuotaRadio.TabStop = true;
             this.RuotaRadio.Text = "Ruota";
@@ -92,9 +95,10 @@
             // CodaRadio
             // 
             this.CodaRadio.AutoSize = true;
-            this.CodaRadio.Location = new System.Drawing.Point(36, 123);
+            this.CodaRadio.Location = new System.Drawing.Point(27, 100);
+            this.CodaRadio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CodaRadio.Name = "CodaRadio";
-            this.CodaRadio.Size = new System.Drawing.Size(61, 20);
+            this.CodaRadio.Size = new System.Drawing.Size(50, 17);
             this.CodaRadio.TabIndex = 2;
             this.CodaRadio.TabStop = true;
             this.CodaRadio.Text = "Coda";
@@ -104,131 +108,148 @@
             // CercLabel
             // 
             this.CercLabel.AutoSize = true;
-            this.CercLabel.Location = new System.Drawing.Point(327, 9);
+            this.CercLabel.Location = new System.Drawing.Point(245, 7);
+            this.CercLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.CercLabel.Name = "CercLabel";
-            this.CercLabel.Size = new System.Drawing.Size(68, 16);
+            this.CercLabel.Size = new System.Drawing.Size(55, 13);
             this.CercLabel.TabIndex = 4;
             this.CercLabel.Text = "Cerchione";
             // 
             // GomLabel
             // 
             this.GomLabel.AutoSize = true;
-            this.GomLabel.Location = new System.Drawing.Point(752, 9);
+            this.GomLabel.Location = new System.Drawing.Point(564, 7);
+            this.GomLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GomLabel.Name = "GomLabel";
-            this.GomLabel.Size = new System.Drawing.Size(55, 16);
+            this.GomLabel.Size = new System.Drawing.Size(43, 13);
             this.GomLabel.TabIndex = 5;
             this.GomLabel.Text = "Gomma";
             // 
             // Label1
             // 
             this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(252, 41);
+            this.Label1.Location = new System.Drawing.Point(189, 33);
+            this.Label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(42, 16);
+            this.Label1.Size = new System.Drawing.Size(34, 13);
             this.Label1.TabIndex = 6;
             this.Label1.Text = "prop1";
             // 
             // Label2
             // 
             this.Label2.AutoSize = true;
-            this.Label2.Location = new System.Drawing.Point(392, 40);
+            this.Label2.Location = new System.Drawing.Point(294, 32);
+            this.Label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(42, 16);
+            this.Label2.Size = new System.Drawing.Size(34, 13);
             this.Label2.TabIndex = 7;
             this.Label2.Text = "prop2";
             // 
             // Label4
             // 
             this.Label4.AutoSize = true;
-            this.Label4.Location = new System.Drawing.Point(730, 40);
+            this.Label4.Location = new System.Drawing.Point(548, 32);
+            this.Label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label4.Name = "Label4";
-            this.Label4.Size = new System.Drawing.Size(42, 16);
+            this.Label4.Size = new System.Drawing.Size(34, 13);
             this.Label4.TabIndex = 9;
             this.Label4.Text = "prop4";
             // 
             // Label3
             // 
             this.Label3.AutoSize = true;
-            this.Label3.Location = new System.Drawing.Point(602, 40);
+            this.Label3.Location = new System.Drawing.Point(452, 32);
+            this.Label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label3.Name = "Label3";
-            this.Label3.Size = new System.Drawing.Size(42, 16);
+            this.Label3.Size = new System.Drawing.Size(34, 13);
             this.Label3.TabIndex = 8;
             this.Label3.Text = "prop3";
             // 
             // Label5
             // 
             this.Label5.AutoSize = true;
-            this.Label5.Location = new System.Drawing.Point(859, 40);
+            this.Label5.Location = new System.Drawing.Point(644, 32);
+            this.Label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Label5.Name = "Label5";
-            this.Label5.Size = new System.Drawing.Size(42, 16);
+            this.Label5.Size = new System.Drawing.Size(34, 13);
             this.Label5.TabIndex = 10;
             this.Label5.Text = "prop5";
             // 
             // Display
             // 
             this.Display.HideSelection = false;
-            this.Display.Location = new System.Drawing.Point(996, 13);
+            this.Display.Location = new System.Drawing.Point(747, 11);
+            this.Display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Display.Name = "Display";
-            this.Display.Size = new System.Drawing.Size(785, 684);
+            this.Display.Size = new System.Drawing.Size(590, 556);
             this.Display.TabIndex = 11;
             this.Display.UseCompatibleStateImageBehavior = false;
+            this.Display.View = System.Windows.Forms.View.List;
             // 
             // Prop1
             // 
-            this.Prop1.Location = new System.Drawing.Point(255, 60);
+            this.Prop1.Location = new System.Drawing.Point(191, 49);
+            this.Prop1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Prop1.Name = "Prop1";
-            this.Prop1.Size = new System.Drawing.Size(100, 22);
+            this.Prop1.Size = new System.Drawing.Size(76, 20);
             this.Prop1.TabIndex = 12;
             // 
             // Prop2
             // 
-            this.Prop2.Location = new System.Drawing.Point(395, 60);
+            this.Prop2.Location = new System.Drawing.Point(296, 49);
+            this.Prop2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Prop2.Name = "Prop2";
-            this.Prop2.Size = new System.Drawing.Size(100, 22);
+            this.Prop2.Size = new System.Drawing.Size(76, 20);
             this.Prop2.TabIndex = 13;
             // 
             // Prop5
             // 
-            this.Prop5.Location = new System.Drawing.Point(862, 60);
+            this.Prop5.Location = new System.Drawing.Point(646, 49);
+            this.Prop5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Prop5.Name = "Prop5";
-            this.Prop5.Size = new System.Drawing.Size(100, 22);
+            this.Prop5.Size = new System.Drawing.Size(76, 20);
             this.Prop5.TabIndex = 14;
             // 
             // Prop4
             // 
-            this.Prop4.Location = new System.Drawing.Point(733, 60);
+            this.Prop4.Location = new System.Drawing.Point(550, 49);
+            this.Prop4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Prop4.Name = "Prop4";
-            this.Prop4.Size = new System.Drawing.Size(100, 22);
+            this.Prop4.Size = new System.Drawing.Size(76, 20);
             this.Prop4.TabIndex = 16;
             // 
             // Prop3
             // 
-            this.Prop3.Location = new System.Drawing.Point(605, 60);
+            this.Prop3.Location = new System.Drawing.Point(454, 49);
+            this.Prop3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Prop3.Name = "Prop3";
-            this.Prop3.Size = new System.Drawing.Size(100, 22);
+            this.Prop3.Size = new System.Drawing.Size(76, 20);
             this.Prop3.TabIndex = 15;
             // 
             // RimLabel
             // 
             this.RimLabel.AutoSize = true;
-            this.RimLabel.Location = new System.Drawing.Point(33, 208);
+            this.RimLabel.Location = new System.Drawing.Point(25, 169);
+            this.RimLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.RimLabel.Name = "RimLabel";
-            this.RimLabel.Size = new System.Drawing.Size(104, 16);
+            this.RimLabel.Size = new System.Drawing.Size(83, 13);
             this.RimLabel.TabIndex = 17;
             this.RimLabel.Text = "Indice rimozione";
             // 
             // RimIndex
             // 
-            this.RimIndex.Location = new System.Drawing.Point(36, 227);
+            this.RimIndex.Location = new System.Drawing.Point(27, 184);
+            this.RimIndex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RimIndex.Name = "RimIndex";
-            this.RimIndex.Size = new System.Drawing.Size(100, 22);
+            this.RimIndex.Size = new System.Drawing.Size(76, 20);
             this.RimIndex.TabIndex = 18;
             // 
             // AggBut
             // 
-            this.AggBut.Location = new System.Drawing.Point(255, 172);
+            this.AggBut.Location = new System.Drawing.Point(191, 140);
+            this.AggBut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AggBut.Name = "AggBut";
-            this.AggBut.Size = new System.Drawing.Size(131, 88);
+            this.AggBut.Size = new System.Drawing.Size(98, 72);
             this.AggBut.TabIndex = 19;
             this.AggBut.Text = "Aggiungi componente";
             this.AggBut.UseVisualStyleBackColor = true;
@@ -236,9 +257,10 @@
             // 
             // RimBut
             // 
-            this.RimBut.Location = new System.Drawing.Point(405, 172);
+            this.RimBut.Location = new System.Drawing.Point(304, 140);
+            this.RimBut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RimBut.Name = "RimBut";
-            this.RimBut.Size = new System.Drawing.Size(131, 88);
+            this.RimBut.Size = new System.Drawing.Size(98, 72);
             this.RimBut.TabIndex = 20;
             this.RimBut.Text = "Rimuovi componente";
             this.RimBut.UseVisualStyleBackColor = true;
@@ -246,9 +268,10 @@
             // 
             // PrezzoBut
             // 
-            this.PrezzoBut.Location = new System.Drawing.Point(405, 266);
+            this.PrezzoBut.Location = new System.Drawing.Point(304, 216);
+            this.PrezzoBut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PrezzoBut.Name = "PrezzoBut";
-            this.PrezzoBut.Size = new System.Drawing.Size(131, 88);
+            this.PrezzoBut.Size = new System.Drawing.Size(98, 72);
             this.PrezzoBut.TabIndex = 22;
             this.PrezzoBut.Text = "Calcolo prezzo";
             this.PrezzoBut.UseVisualStyleBackColor = true;
@@ -256,9 +279,10 @@
             // 
             // StampaBut
             // 
-            this.StampaBut.Location = new System.Drawing.Point(255, 266);
+            this.StampaBut.Location = new System.Drawing.Point(191, 216);
+            this.StampaBut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StampaBut.Name = "StampaBut";
-            this.StampaBut.Size = new System.Drawing.Size(131, 88);
+            this.StampaBut.Size = new System.Drawing.Size(98, 72);
             this.StampaBut.TabIndex = 21;
             this.StampaBut.Text = "Stampa componenti";
             this.StampaBut.UseVisualStyleBackColor = true;
@@ -266,10 +290,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1793, 709);
+            this.ClientSize = new System.Drawing.Size(1345, 576);
             this.Controls.Add(this.PrezzoBut);
             this.Controls.Add(this.StampaBut);
             this.Controls.Add(this.RimBut);
@@ -293,8 +317,9 @@
             this.Controls.Add(this.CodaRadio);
             this.Controls.Add(this.AlaRadio);
             this.Controls.Add(this.FusoRadio);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "c";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

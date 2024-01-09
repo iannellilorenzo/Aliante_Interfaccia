@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    public class Cerchione : IComposite
+    public class Cerchione : IComponent
     {
         private double _pollici;
         private string _materiale;
@@ -58,7 +58,7 @@ namespace Aliante_Interfaccia
             return Pollici == other.Pollici && Materiale == other.Materiale;
         }
 
-        public void Aggiunta(IComposite component)
+        public void Aggiunta(IComponent component)
         {
 
         }
@@ -68,7 +68,7 @@ namespace Aliante_Interfaccia
             
         }
 
-        public IComposite GetChild(int index)
+        public IComponent GetChild(int index)
         {
             return null;
         }

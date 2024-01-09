@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    public class Ala : IComposite
+    public class Ala : IComponent
     {
         private double _lung;
         private double _aper;
@@ -64,7 +64,7 @@ namespace Aliante_Interfaccia
             return Lung == other.Lung && Aper == other.Aper;
         }
 
-        public void Aggiunta(IComposite component)
+        public void Aggiunta(IComponent component)
         {
 
         }
@@ -74,7 +74,7 @@ namespace Aliante_Interfaccia
             
         }
 
-        public IComposite GetChild(int index)
+        public IComponent GetChild(int index)
         {
             return null;
         }

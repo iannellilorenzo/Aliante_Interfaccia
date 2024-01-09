@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    public interface IComposite
+    public interface IComponent
     {
-        void Aggiunta(IComposite componente);
+        void Aggiunta(IComponent componente);
 
         void Rimuovi(int index);
 
-        IComposite GetChild(int index);
+        IComponent GetChild(int index);
 
         bool Equals(object obj);
 

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    public class Aliante : IComposite
+    public class Aliante : IComponent
     {
-        private List<IComposite> _components;
+        private List<IComponent> _components;
 
-        public List<IComposite> IComposites
+        public List<IComponent> IComponents
         {
             get { return _components; }
             set { _components = value; }
@@ -18,17 +18,17 @@ namespace Aliante_Interfaccia
 
         public Aliante()
         {
-            IComposites = new List<IComposite>();
+            IComponents = new List<IComponent>();
         }
 
-        public Aliante(List<IComposite> components)
+        public Aliante(List<IComponent> components)
         {
-            IComposites = components;
+            IComponents = components;
         }
 
         public Aliante(Aliante oldAliante)
         {
-            IComposites = oldAliante.IComposites;
+            IComponents = oldAliante.IComponents;
         }
 
         public override bool Equals(object obj)
@@ -39,14 +39,14 @@ namespace Aliante_Interfaccia
             }
 
             Aliante other = (Aliante)obj;
-            if (IComposites.Count != other.IComposites.Count)
+            if (IComponents.Count != other.IComponents.Count)
             {
                 return false;
             }
 
-            for (int i = 0; i < IComposites.Count; i++)
+            for (int i = 0; i < IComponents.Count; i++)
             {
-                if (!IComposites[i].Equals(other.IComposites[i]))
+                if (!IComponents[i].Equals(other.IComponents[i]))
                 {
                     return false;
                 }
@@ -55,21 +55,21 @@ namespace Aliante_Interfaccia
             return true;
         }
 
-        public void Aggiunta(IComposite component)
+        public void Aggiunta(IComponent component)
         {
-            IComposites.Add(component);
+            IComponents.Add(component);
         }
 
         public void Rimuovi(int index)
         {
-            IComposites.RemoveAt(index);
+            IComponents.RemoveAt(index);
         }
 
-        public IComposite GetChild(int index)
+        public IComponent GetChild(int index)
         {
-            if (IComposites.Count > index)
+            if (IComponents.Count > index)
             {
-                return IComposites[index];
+                return IComponents[index];
             }
 
             return null;
@@ -79,7 +79,7 @@ namespace Aliante_Interfaccia
         {
             string str = "";
 
-            foreach (var component in IComposites)
+            foreach (var component in IComponents)
             {
                 str += component.ToString();
             }
@@ -91,7 +91,7 @@ namespace Aliante_Interfaccia
         {
             double tot = 0;
 
-            foreach (var component in IComposites)
+            foreach (var component in IComponents)
             {
                 tot += component.Prezzo();
             }

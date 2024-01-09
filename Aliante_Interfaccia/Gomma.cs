@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aliante_Interfaccia
 {
-    public class Gomma : IComposite
+    public class Gomma : IComponent
     {
         private double _alt;
         private double _larg;
@@ -80,7 +80,7 @@ namespace Aliante_Interfaccia
             return Alt == other.Alt && Larg == other.Larg && Raggio == other.Raggio;
         }
 
-        public void Aggiunta(IComposite component)
+        public void Aggiunta(IComponent component)
         {
 
         }
@@ -90,7 +90,7 @@ namespace Aliante_Interfaccia
             
         }
 
-        public IComposite GetChild(int index)
+        public IComponent GetChild(int index)
         {
             return null;
         }
